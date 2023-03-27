@@ -1,0 +1,64 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/static/greentoken-removebg.png" type="image/x-icon">
+  <title>GreenTokens</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<style>
+
+</style>
+<body>
+
+<div class="container">
+    <img src="/static/croped.png" alt="" width="200">
+</div>
+<div class="container">
+    <hr>
+</div>
+<br>
+<center>
+    <div class="container">
+        <div class="container mt-3">
+            <div class="mt-4 p-5 bg-light text-black rounded">
+                <img src="/static/greentoken-removebg.png" alt="GreenToken" width="80">
+                
+<br>
+<br>
+
+<h1 style="font-family: 'Courier New', Courier, monospace;">Your QR code is active</h1>
+<p style="font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;">Use this QR Code to token a physical location or object:</p>
+
+
+<div class="container" style="background-color: white; width: 50%; height: 50%;">
+    <img src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data={{link}}" alt="QR code">
+   
+<br>
+<br>
+
+<button type="button"  class="container btn btn-success">{{link}}</button>
+</div>
+<br>
+<br>
+<p>When someone scans the QR Code with a reader, it will trigger the URL tied to your token and fire an alert.</p>
+                <br>
+                <br>
+                <br>
+                <br>
+                
+            </div>
+          </div>
+    </div>
+</center>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
+

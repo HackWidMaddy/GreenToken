@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="shortcut icon" href="/static/greentoken-removebg.png" type="image/x-icon">
+  <title>GreenTokens</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+</head>
+<style>
+
+</style>
+<body>
+
+<div class="container">
+    <img src="/static/croped.png" alt="" width="200">
+</div>
+<div class="container">
+    <hr>
+</div>
+<br>
+    <div class="container">
+        <div class="container mt-3">
+            <div class="mt-4 p-5 bg-light text-black rounded">
+                <form method="post" action="/generate">
+                <select class="form-select form-select-lg mb-3" aria-label=".form-select-lg example" name="select" required>
+                    <option selected>Select your token</option>
+                    <option value="qr">QR code</option>
+                  </select>
+                  <hr>
+                  
+                 
+                    <div class="mb-3">
+                      <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Provided an email" name="email" required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Reminder note when this token is triggered, like: QR code underneath Simon's phone batter" name="reminder" required>
+                      </div>
+                      <button type="submit" class="btn btn-success">Create my GreenToken</button>
+                      </form>
+                  
+            </div>
+          </div>
+    </div>
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.min.js" integrity="sha384-heAjqF+bCxXpCWLa6Zhcp4fu20XoNIA98ecBC1YkdXhszjoejr5y9Q77hIrv8R9i" crossorigin="anonymous"></script>
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js" integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N" crossorigin="anonymous"></script>
+</body>
+</html>
+
