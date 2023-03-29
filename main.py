@@ -268,4 +268,4 @@ def q():
     return render_template('slogan.html',joke=get_joke())
 
 
-app.run(debug=True)
+app.run(debug=false,host='0.0.0.0')
