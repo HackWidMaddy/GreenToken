@@ -27,7 +27,7 @@ app.config.update(
     MAIL_PORT=587,
     MAIL_USE_TLS=True,
     MAIL_USERNAME='greentokennotification@gmail.com',
-    MAIL_PASSWORD='wbwtiwlicoapawtx'
+    MAIL_PASSWORD='ThisIsHacked'
 )
 mail = Mail(app)
 
