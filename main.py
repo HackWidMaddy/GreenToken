@@ -26,7 +26,7 @@ app.config.update(
     MAIL_SERVER='smtp.gmail.com',
     MAIL_PORT=587,
     MAIL_USE_TLS=True,
-    MAIL_USERNAME='greentokennotification@gmail.com',
+    MAIL_USERNAME='email@dn.com',
     MAIL_PASSWORD='ThisIsHacked'
 )
 mail = Mail(app)
@@ -58,7 +58,7 @@ def generate():
 
         
         if select=='qr':
-            client = pymongo.MongoClient('mongodb+srv://admin:xCpk78QPj9kQas8p@cluster0.snmuuol.mongodb.net/test')
+            client = pymongo.MongoClient('mongodb client')
             db = client['GreenToken']
             collection = db['qr']
             imformation_dictionary = {
@@ -96,7 +96,7 @@ def get_joke():
     return joke
 
 
-client = pymongo.MongoClient('mongodb+srv://admin:xCpk78QPj9kQas8p@cluster0.snmuuol.mongodb.net/test')
+client = pymongo.MongoClient('mongodb client')
 db = client['GreenToken']
 collection = db['qr']   
 
@@ -131,7 +131,7 @@ def q():
 
 
 
-    msg = Message('GreenToken Triggered',sender='greentokennotification@gmail.com', recipients=[recipient])
+    msg = Message('GreenToken Triggered',sender='myemail@email.com', recipients=[recipient])
     msg.html = f'''
     <!DOCTYPE html>
 <html>
